@@ -84,6 +84,44 @@ header .arrow:hover {
     filter: invert(100%);
 }
 
+main {
+
+}
+
+main section {
+    display: flex;
+}
+
+main section div {
+ border: 1px solid black;
+}
+
+main section .dialog {
+    width: 540px;
+    height: 400px;
+    margin-top: -50px;
+    padding: 80px 70px 100px 70px;
+    background-color: #fff;
+}
+
+main section .lines, .quality, .team {
+    width: 400px;
+    height: 521px;
+    padding: 80px 70px 100px 70px;
+}
+
+main section .lines {
+    background-color: #f9f5d5;
+}
+
+main section .quality {
+    background-color: #e9f6fd;
+}
+
+main section .team {
+    background-color: #f8e4e3;
+}
+
 footer .logo {
     filter: invert(100%);
 }
