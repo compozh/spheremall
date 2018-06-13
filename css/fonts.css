@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Basis Grotesque Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Basis Grotesque Pro Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Basis Grotesque Pro Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Basis Grotesque Pro Bold.ttf') format('truetype');
+}

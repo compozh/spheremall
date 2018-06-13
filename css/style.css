@@ -1,0 +1,93 @@
+body {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    background: url("../assets/img/bg.jpg") no-repeat top center;
+}
+
+header {
+    position: relative;
+    height: 510px;
+    padding-top: 40px;
+}
+
+header .top {
+    display: flex;
+    align-content: center;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header nav {
+    margin: 10px 0 0 101px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 36px;
+}
+
+header nav ul li:nth-child(n+4) {
+    margin-right: 32px;
+}
+
+header nav ul li a {
+    font-family: "Basis Grotesque Pro Medium", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+header .border {
+    position: relative;
+    height: 100px;
+    width: 150px;
+    top: 124px;
+    left: 0;
+    border: 6px solid #fff;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+header h1 {
+    font-family: "Basis Grotesque Pro Black", sans-serif;
+    font-size: 40px;
+    color: #fff;
+    padding: 19px 0 0 45px;
+    line-height: 48px;
+}
+
+header .arrow {
+    width: 12px;
+    height: 17px;
+    background: url("../assets/img/arrow.png") no-repeat center;
+    position: absolute;
+    right: -132px;
+    bottom: 38px;
+}
+
+header .arrow:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+footer .logo {
+    filter: invert(100%);
+}
+
+footer .copyright {
+    text-align: right;
+}
