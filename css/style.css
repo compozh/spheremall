@@ -1,42 +1,59 @@
 body {
-    width: 940px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 10px;
     background: url("../assets/img/bg.jpg") no-repeat top center;
+    position: relative;
+}
+
+body .arrow {
+    width: 12px;
+    height: 17px;
+    background: url("../assets/img/arrow.png") no-repeat center;
+    position: absolute;
+    top: 495px;
+    right: calc(47/1280*100%);
+}
+
+body .arrow:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+header, main, footer {
+    max-width: 940px;
+    margin: 0 auto 140px auto;
 }
 
 header {
-    position: relative;
     height: 510px;
     padding-top: 40px;
 }
 
 header .top {
     display: flex;
-    align-content: center;
 }
 
 header .logo {
+    align-self: start;
     cursor: pointer;
 }
 
 header nav {
-    margin: 10px 0 0 101px;
+    margin: 10px 0 0 90px;
+    width: calc(410/940*100%);
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
 
 header nav ul li {
-    margin-right: 36px;
-}
-
-header nav ul li:nth-child(n+4) {
-    margin-right: 32px;
+    margin-left: 10px;
 }
 
 header nav ul li a {
@@ -70,56 +87,50 @@ header h1 {
     line-height: 48px;
 }
 
-header .arrow {
-    width: 12px;
-    height: 17px;
-    background: url("../assets/img/arrow.png") no-repeat center;
-    position: absolute;
-    right: -132px;
-    bottom: 38px;
-}
-
-header .arrow:hover {
-    cursor: pointer;
-    filter: invert(100%);
-}
-
 main {
 
 }
 
 main section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 main section div {
- border: 1px solid black;
+ /* border: 1px solid black; */
 }
 
 main section .dialog {
-    width: 540px;
-    height: 400px;
-    margin-top: -50px;
+    width: 400px;
+    height: 480px;
+    margin: -190px 0 20px 0;
     padding: 80px 70px 100px 70px;
-    background-color: #fff;
+    background-color: #f3f3f3;
 }
 
 main section .lines, .quality, .team {
-    width: 400px;
-    height: 521px;
+    width: 260px;
+    height: 360px;
     padding: 80px 70px 100px 70px;
 }
 
 main section .lines {
     background-color: #f9f5d5;
+    margin: 0 0 20px 0;
 }
 
 main section .quality {
     background-color: #e9f6fd;
 }
 
+main section .image {
+    width: 400px;
+    height: 480px;
+}
+
 main section .team {
     background-color: #f8e4e3;
+    justify-self: right;
 }
 
 footer .logo {
