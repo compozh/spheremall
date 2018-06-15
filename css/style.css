@@ -138,14 +138,14 @@ main section .intro button, .team div button {
     cursor: pointer;
 }
 
-main section .intro button img, .team div button img {
+main section .intro button img, .team div button img, .modal form button img {
     vertical-align: middle;
     margin-left: calc(30/285*100%);
     transform: rotate(-90deg);
     filter: invert(100%);
 }
 
-main section .intro button:hover, .team div button:hover {
+main section .intro button:hover, .team div button:hover, .modal form button:hover {
     filter: invert(100%);
 }
 
@@ -224,6 +224,101 @@ main section .team div button img {
     margin-left: calc(91/260*100%);
 }
 
+.box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.box-inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #343434;
+    opacity: 0.7;
+}
+
+.modal {
+    position: absolute;
+    top: 254px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 520px;
+    max-height: 615px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+}
+
+.modal form {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.modal form .close {
+    cursor: pointer;
+    align-self:  flex-end;
+    font-size: 25px;
+    padding: 3px 8px 0 0;
+}
+
+.modal form p {
+    font-family: "Basis Grotesque Pro Bold";
+    font-size: 16px;
+    text-align:  center;
+    margin: 7px 0 29px 2px;
+}
+
+
+.modal form input, .modal form textarea, .modal form button {
+    align-self: center;
+    background: #fff;
+    border: 3px solid #e8e8e8;
+    width: 465px;
+    margin-bottom: 15px;
+    font-family: "Basis Grotesque Pro Bold";
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+.modal form input {
+    max-width: 439px;
+    height: 52px;
+    padding: 5px 0 0px 18px;
+    margin: 0px -9px 16px 0;
+}
+
+.modal form input::-webkit-input-placeholder,
+.modal form textarea::-webkit-input-placeholder {
+    color: #b6b6b6;
+}
+
+.modal form textarea {
+    max-width: 440px;
+    height: 198px;
+    padding: 22px 0 0 19px;
+    margin: 0 0 23px 10px;
+}
+
+.modal form button {
+    max-width: 286px;
+    height: 65px;
+    color: #0a0a0b;
+    margin: 0 -10px 0 0;
+    padding: 0px 0px 3px 93px;
+}
+
+.modal form button img {
+    margin-left: 85px;
+}
+
 footer {
     font-family: "Basis Grotesque Pro Medium";
     background-color: #fff;
@@ -235,6 +330,7 @@ footer .logo {
     width: 30px;
     filter: invert(100%);
     align-self: flex-start;
+    cursor: pointer;
 }
 
 footer h3 {
@@ -278,6 +374,7 @@ footer section .rotterdam {
 
 footer section img {
     align-self: flex-start;
+    cursor: pointer;
 }
 
 footer section .twitter {
