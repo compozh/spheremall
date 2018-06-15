@@ -225,6 +225,7 @@ main section .team div button img {
 }
 
 .box {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
